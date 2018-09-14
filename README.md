@@ -1,0 +1,2 @@
+# kakarot
+Angular application
