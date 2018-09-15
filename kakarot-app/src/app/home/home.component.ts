@@ -10,6 +10,7 @@ export class HomeComponent implements OnInit {
 
   public welcomeMessage: string;
   public inputText: string;
+  public todoList: any[];
 
 
   constructor() {
@@ -18,11 +19,12 @@ export class HomeComponent implements OnInit {
 
   ngOnInit() {
     this.welcomeMessage = 'Welcome to Kakarot!';
+    this.todoList = [];
   }
 
 
   doSomething() {
-    console.log(this.inputText);
+    this.todoList.push(this.inputText);
   }
 
 }

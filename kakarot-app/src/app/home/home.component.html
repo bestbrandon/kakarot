@@ -16,10 +16,12 @@
     </div>
 
     <div class="col">
-      <br><span>{{inputText}}</span><br>
+      <ul>
+        <li *ngFor="let item of todoList">
+          <span>{{item}}</span> <br>
+        </li>
+      </ul>
     </div>
   </div>
-
-
 
 </div>
