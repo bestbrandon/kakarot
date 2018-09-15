@@ -1,3 +1,25 @@
-<p>
-  home works!
-</p>
+<div>
+  <div class="container blue-dark">
+    <div class="col">
+      <h1>{{welcomeMessage}}</h1>
+    </div>
+
+
+  </div>
+
+  <div class="half-container">
+    <div style="padding-top: 30px;" class="col">
+
+      <input type="text" class="txt" placeholder="put some text here" [(ngModel)]="inputText">
+      <input type="button" class="btn" value="do something" (click)="doSomething()">
+
+    </div>
+
+    <div class="col">
+      <br><span>{{inputText}}</span><br>
+    </div>
+  </div>
+
+
+
+</div>

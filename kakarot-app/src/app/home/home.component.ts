@@ -1,5 +1,4 @@
 
-import {HttpClient} from "@angular/common/http";
 import {Component, OnInit} from "@angular/core";
 
 @Component({
@@ -9,13 +8,21 @@ import {Component, OnInit} from "@angular/core";
 })
 export class HomeComponent implements OnInit {
 
-  constructor(private http: HttpClient) {
+  public welcomeMessage: string;
+  public inputText: string;
+
+
+  constructor() {
 
   }
 
   ngOnInit() {
-
+    this.welcomeMessage = 'Welcome to Kakarot!';
   }
 
+
+  doSomething() {
+    console.log(this.inputText);
+  }
 
 }
