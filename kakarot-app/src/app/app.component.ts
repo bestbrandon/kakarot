@@ -12,18 +12,12 @@ export class AppComponent {
 
 
 
-  constructor(private http: HttpClient) {
-    this.welcomeMessage = 'Welcome to Kakarot!';
+  constructor() {
+
   }
 
   ngOnInit() {
-    console.log('in init');
-    this.http.get('http://localhost:8080/services_war_exploded/services/getName', {
-      headers: {"Access-Control-Allow-Origin" : "*"}
-    })
-      .subscribe(data => {
-        console.log(data);
-      });
+    this.welcomeMessage = 'Welcome to Kakarot!';
   }
 }
 
