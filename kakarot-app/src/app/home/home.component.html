@@ -1,6 +1,6 @@
-<div>
+<div class="container">
   <div class="container blue-dark">
-    <div class="col">
+    <div class="Header">
       <h1>{{welcomeMessage}}</h1>
     </div>
 
@@ -8,20 +8,22 @@
   </div>
 
   <div class="half-container">
-    <div style="padding-top: 30px;" class="col">
+    <div style="padding-top: 30px; padding-right: 50px;" class="col">
 
-      <input type="text" class="txt" placeholder="put some text here" [(ngModel)]="inputText">
-      <input type="button" class="btn" value="do something" (click)="doSomething()">
+      <input type="text" class="txt" placeholder="Start here" [(ngModel)]="inputText">
+      <input type="button" class="btn" value="Add to List" (click)="doSomething()">
 
     </div>
 
-    <div class="col">
-      <ul>
-        <li *ngFor="let item of todoList">
-          <span>{{item}}</span> <br>
-        </li>
-      </ul>
-    </div>
+      <div class="myList">
+            <ul>
+              <li *ngFor="let item of todoList;let i=index">
+                <span>{{item}}</span> <button type="submit" class="button" (click)="delete(item, i)" >X</button><br>
+              </li>
+            </ul>
+          <!--</div>-->
+      </div>
   </div>
+
 
 </div>

@@ -1,6 +1,7 @@
 .container {
   display: grid;
   text-align: center;
+  background: #45ada8;
 }
 
 .half-container {
@@ -13,8 +14,27 @@
   padding: .4em 1.3em;
 }
 
-.blue-dark {
-  background: #cbccc6;
+.Header {
+  padding: .4em 1.3em;
+  background: #547980;
+}
+
+.myList{
+  padding: .4em 1.3em;
+  background: #696969;
+  border-style: solid;
+  border:4px solid #ffffff;
+  text-align: center;
+  color: white;
+  font-weight: 900;
+  margin-top:30px;
+  text-decoration-line: underline;
+
+}
+
+.container blue-dark {
+  background: #45ada8;
+  border-style: solid;
 }
 
 input.txt {
@@ -32,5 +52,18 @@ input.btn {
   color:#003A61;
   margin-bottom:1em;
   cursor:pointer;
+}
+
+.button {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 10px;
+    margin: 4px 10px;
+    cursor: pointer;
+    border-radius: 75%;
 }
 

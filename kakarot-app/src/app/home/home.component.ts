@@ -11,7 +11,8 @@ export class HomeComponent implements OnInit {
   public welcomeMessage: string;
   public inputText: string;
   public todoList: any[];
-
+  data: any = [];
+  delRow;
 
   constructor() {
 
@@ -26,5 +27,10 @@ export class HomeComponent implements OnInit {
   doSomething() {
     this.todoList.push(this.inputText);
   }
+
+ delete(item, index){
+
+    this.todoList.splice(index, 1);
+ }
 
 }
